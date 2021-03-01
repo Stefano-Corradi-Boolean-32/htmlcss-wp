@@ -5,26 +5,10 @@
   box-sizing: border-box;
 }
 
-
-
 body{
   font-family: 'Montserrat', sans-serif;
-}
-
-nav li{
-  list-style: none;
-  display: inline;
-  padding-right: 10px;
-}
-
-nav li a{
-  color: #fff;
-  text-decoration: none;
-  text-transform:uppercase;
-}
-
-nav li a:hover{
-  color:coral;
+  font-size: 300;
+  color: rgb(58, 58, 58);
 }
 
 .clearfix:after {
@@ -36,40 +20,107 @@ nav li a:hover{
 .container{
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
-.logo{
-  margin-top: 40px;
+.overlay{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* HEADER */
+
+.logo img{
+  height: 70px;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+/* menu */
 nav{
-  height: 100px;
-  background-color: blueviolet;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+nav li{
+  list-style: none;
+  display: inline;
+  padding-right: 10px;
+}
+
+nav li a{
+  color: rgb(121, 121, 121);
+  text-decoration: none;
+  text-transform:uppercase;
+}
+
+nav li a:hover{
+  color:coral;
 }
 
 .banner{
   height: 500px;
-  background-color: burlywood;
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
+/* MAIN */
 main{
-  background-color: darkblue;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
-.title{
-  height: 100px;
-  margin-bottom: 20px;
-  background-color: darkcyan;
+.banner-text{
+  color: white;
+  padding-left: 50px;
+  padding-top: 20%;
+  padding-right: 40%;
 }
 
+.banner-text h3{
+  font-size: 30px;
+}
+
+.title{
+  margin-bottom: 20px;
+}
+
+.title h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.title h4{
+  font-size: 17px;
+}
+
+/* colonne */
 .col{
   float:left;
-  background-color: darkcyan;
-  height: 600px;
+}
+
+.col .box-img{
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.col-left .box-img{
+  background-image: url("../img/img-1.jpg");
+}
+
+.col-center .box-img{
+  background-image: url("../img/banner-2.jpg");
+}
+
+.col-right .box-img{
+  background-image: url("../img/img-3.jpg");
 }
 
 .col-left, .col-right{
@@ -81,7 +132,32 @@ main{
   margin: 0 2%;
 }
 
+.col .col-text{
+  padding-top: 20px;
+}
+.col .col-text h4{
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.col .col-text p{
+
+}
+
+
+/* FOOTER */
 footer{
-  height: 100px;
-  background-color: blueviolet;
+  text-align: center;
+/*   margin-bottom: 40px; */
+}
+
+/* footer .love::after{
+  content: "\2665";
+  color: red;
+  font-size: 20px;
+} */
+
+footer .love span{
+  color: red;
+  font-size: 20px;
 }
